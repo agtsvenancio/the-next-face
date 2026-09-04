@@ -117,6 +117,7 @@ function CastingPage() {
             <li key={item}><span>{String(index + 1).padStart(2, '0')}</span><strong>{item}</strong></li>
           ))}
         </ol>
+        <button type="button" className="dark-cta process-cta" onClick={goToForm}>Inscreva-se <Arrow /></button>
       </section>
 
       <section className="editorial" id="editorial">
