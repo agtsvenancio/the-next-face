@@ -1,14 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useRef, useState, type FormEvent } from "react";
 
-import heroAsset from "@/assets/casting-hero.jpg.asset.json";
-import combAsset from "@/assets/editorial-comb.jpg.asset.json";
-import knitAsset from "@/assets/editorial-knit.jpg.asset.json";
-import portraitAsset from "@/assets/editorial-portrait.jpg.asset.json";
-import poloAsset from "@/assets/editorial-black-polo.jpg.asset.json";
-import layeredAsset from "@/assets/editorial-layered.jpg.asset.json";
-import monoAsset from "@/assets/editorial-monochrome.jpg.asset.json";
-import carAsset from "@/assets/editorial-car.jpg.asset.json";
+import heroImage from "@/assets/casting-hero.jpg";
+import combImage from "@/assets/editorial-comb.jpg";
+import knitImage from "@/assets/editorial-knit.jpg";
+import portraitImage from "@/assets/editorial-portrait.jpg";
+import layeredImage from "@/assets/editorial-layered.jpg";
+import monoImage from "@/assets/editorial-monochrome.jpg";
+import carImage from "@/assets/editorial-car.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,13 +33,12 @@ const profile = [
 const process = ["Cadastro", "Avaliação do perfil", "Contato da equipe", "Possíveis oportunidades"];
 
 const gallery = [
-  { src: knitAsset.url, alt: "Modelo masculino em editorial de moda com tricô marrom", span: "gallery-tall" },
-  { src: monoAsset.url, alt: "Retrato masculino editorial em preto e branco", span: "gallery-short" },
-  { src: combAsset.url, alt: "Editorial masculino em preto e branco", span: "gallery-wide" },
-  { src: layeredAsset.url, alt: "Modelo masculino em produção de moda neutra", span: "gallery-short" },
-  { src: carAsset.url, alt: "Modelo masculino em campanha editorial automotiva", span: "gallery-tall" },
-  { src: portraitAsset.url, alt: "Retrato de beleza masculino", span: "gallery-short" },
-  { src: poloAsset.url, alt: "Modelo masculino vestindo polo preta", span: "gallery-tall" },
+  { src: knitImage, alt: "Modelo masculino em editorial de moda com tricô marrom", span: "gallery-tall" },
+  { src: monoImage, alt: "Retrato masculino editorial em preto e branco", span: "gallery-short" },
+  { src: combImage, alt: "Editorial masculino em preto e branco", span: "gallery-wide" },
+  { src: layeredImage, alt: "Modelo masculino em produção de moda neutra", span: "gallery-short" },
+  { src: carImage, alt: "Modelo masculino em campanha editorial automotiva", span: "gallery-tall" },
+  { src: portraitImage, alt: "Retrato de beleza masculino", span: "gallery-short" },
 ];
 
 function Arrow() {
@@ -72,7 +70,7 @@ function CastingPage() {
       </header>
 
       <section className="hero" id="top">
-        <img src={heroAsset.url} alt="Modelo masculino em fotografia editorial de moda" fetchPriority="high" />
+        <img src={heroImage} alt="Modelo masculino em fotografia editorial de moda" fetchPriority="high" />
         <div className="hero-shade" />
         <p className="hero-index">CASTING ABERTO<br />BRASIL · 2026</p>
         <div className="hero-copy">
@@ -170,7 +168,7 @@ function CastingPage() {
       </section>
 
       <section className="final-cta">
-        <img src={combAsset.url} alt="Modelo em sessão editorial de moda" loading="lazy" />
+        <img src={combImage} alt="Modelo em sessão editorial de moda" loading="lazy" />
         <div className="final-shade" />
         <div>
           <p className="kicker">Seu próximo capítulo</p>
