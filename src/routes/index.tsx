@@ -6,7 +6,7 @@ import combImage from "@/assets/editorial-comb.jpg";
 import knitImage from "@/assets/editorial-knit.jpg";
 import portraitImage from "@/assets/editorial-portrait.jpg";
 import layeredImage from "@/assets/editorial-layered.jpg";
-import monoImage from "@/assets/editorial-monochrome.JPG";
+import monoImage from "@/assets/editorial-monochrome.jpg";
 import carImage from "@/assets/editorial-car.jpg";
 
 export const Route = createFileRoute("/")({
