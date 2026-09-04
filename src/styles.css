@@ -91,7 +91,6 @@ h2 em { font-weight: 400; }
 .gallery figure:nth-child(4) { grid-column: 2 / 5; }
 .gallery figure:nth-child(5) { grid-column: 6 / 10; margin-top: -7vw; }
 .gallery figure:nth-child(6) { grid-column: 10 / 13; margin-top: 5vw; }
-.gallery figure:nth-child(7) { grid-column: 2 / 6; margin-top: 3vw; }
 .gallery img { width: 100%; display: block; object-fit: cover; filter: saturate(.72); transition: filter .4s ease; }
 .gallery figure:hover img { filter: saturate(1); }
 .gallery-tall img { aspect-ratio: 3 / 4; }
@@ -161,7 +160,7 @@ footer p { margin: 0; font-size: 9px; text-transform: uppercase; opacity: .6; }
   .editorial h2 { font-size: 49px; }
   .gallery { grid-template-columns: 1fr 1fr; gap: 28px 10px; padding: 0 10px 70px; }
   .gallery figure:nth-child(n) { grid-column: auto; margin-top: 0; }
-  .gallery figure:nth-child(3), .gallery figure:nth-child(7) { grid-column: 1 / -1; width: 72%; justify-self: center; }
+  .gallery figure:nth-child(3) { grid-column: 1 / -1; width: 72%; justify-self: center; }
   form { grid-template-columns: 1fr; }
   .field-wide { grid-column: 1; }
   .form-intro h2 { font-size: 56px; }
